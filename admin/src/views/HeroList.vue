@@ -13,7 +13,7 @@
                     <img :src="scope.row.avatar" alt="">
                 </template>
             </el-table-column>
-            <el-table-column label="操作">
+            <el-table-column label="操作" fixed="right">
                 <template slot-scope="scope">
                     <el-button size="mini" @click="$router.push(`/heroes/edit/${scope.row._id}`)">编辑</el-button>
                     <el-button size="mini" type="danger" @click="remove(scope.row._id)">删除</el-button>

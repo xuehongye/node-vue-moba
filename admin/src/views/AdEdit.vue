@@ -15,7 +15,7 @@
                             <el-input v-model="item.url"></el-input>
                         </el-form-item>
                         <el-form-item label="图片">
-                            <el-upload class="avatar-uploader" :action="uploadUrl()"
+                            <el-upload class="avatar-uploader" :action="uploadUrl"
                                 :headers="getAuthHeaders()"
                                 :show-file-list="false" :on-success="res => $set(item, 'image', res.url)">
                                 <img v-if="item.image" :src="item.image" class="avatar">

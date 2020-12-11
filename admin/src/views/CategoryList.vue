@@ -31,7 +31,7 @@
         methods: {
             async fetch() {
                 const res = await this.$http.get('/rest/categories')
-                this.tableData = res.data
+                this.tableData = res.data.reverse()
             },
             async remove(id) {
                 const res = await this.$http.delete(`/rest/categories/${id}`)
